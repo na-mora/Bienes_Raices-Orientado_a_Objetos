@@ -1,0 +1,19 @@
+{
+    "name": "nelalejandro/bienesraices",
+    "description": "Proyecto orientado a objetos",
+    
+    "authors": [
+        {
+            "name": "Alejandro Mora Pinto",
+            "email": "na.mora@uniandes.edu.co"
+        }
+    ],
+    "require": {
+        "intervention/image": "^2.7"
+    },
+    "autoload":{
+        "psr-4": {
+            "App\\": "./clases"
+        }
+    }
+}

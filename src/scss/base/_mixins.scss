@@ -1,0 +1,56 @@
+//-------------------------------------------
+// Mixins (funciones sass)
+//-------------------------------------------
+
+// Media Queries
+
+/** Para tamano de telefono**/
+@mixin telefono {
+    @media (min-width: #{$telefono}) {
+        @content;
+    }
+}
+
+/** Para tamano tablet**/
+@mixin tablet {
+    @media (min-width: #{$tablet}) {
+        @content;
+    }
+}
+
+/** Para tamano de un escritorio**/
+@mixin desktop {
+    @media (min-width: #{$desktop}) {
+        @content;
+    }
+}
+
+// Display
+
+/* Configuracion inicia de un grid*/
+@mixin grid($columnas, $espaciado ) {
+    display: grid;
+    gap: $espaciado;
+    grid-template-columns: repeat($columnas, 1fr);
+}
+
+// Botones
+
+/* Configuracion inicial de un boton*/
+@mixin boton($fondo, $display){
+    background-color: $fondo;
+    color: $blanco;
+    font-weight: $bold;
+    text-decoration: none;
+    padding: 1rem 3rem;
+    text-align: center;
+    margin-top: $separacion/2;
+    display: $display;
+    border:none;
+
+    &:hover{
+        color: $negro;
+        background-color: darken($fondo,1);
+        cursor: pointer;
+    }
+}

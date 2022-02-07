@@ -1,0 +1,47 @@
+//-----------------------------------------
+// Utilidades
+//-----------------------------------------
+
+/* Configuracion inicial de una seccion*/
+.seccion {
+    margin-top: $separacion / 2;
+    margin-bottom: $separacion / 2;
+}
+
+/* Centrar el contenido */
+.contenido-centrado {
+    max-width: 800px;
+}
+
+/*Eliminar las margenes de cualquier elemento */
+.no-margin{
+    margin: 0;
+}
+
+/* Alinear a la derecha */
+.alinear-derecha{
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Alinear a la izquierda */
+.alinear-izquierda{
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* Deshabilitar cambios en el puntero del mouse */
+.deshabilitar{
+    pointer-events: none;
+}
+
+/* Colocar el texto en negrilla*/
+.bold{
+    font-weight: $bold;
+}
+
+/* Colocar el elemento al msimo tamano de la pantalla*/
+.w-100{
+    width: 100%;
+    background-color: $rojo;
+}

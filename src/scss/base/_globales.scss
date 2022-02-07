@@ -1,0 +1,66 @@
+//--------------------------------------------------------
+// Configuracion base del proyecto
+//--------------------------------------------------------
+
+/*Basicos*/
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/*Fuente del texto con su tamano e interlineado*/
+body {
+    font-family: $fuente_principal;
+    font-size: 1.6rem;
+    line-height: 1.8;
+}
+/*Tamano y color de los parrafos*/
+p {
+    color: $negro;
+    font-size: 2rem;
+}
+
+/*Basicos de un contenedor*/
+.contenedor {
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+/*Quitamos subrayado de los links*/
+a {
+    text-decoration: none;
+}
+
+/*Basicos de una imagen*/
+img,
+picture {
+    width: 100%;
+    display: block;
+}
+
+/*Fuente, basicos de encabezados*/
+h1, h2, h3, h4 {
+    font-family: $fuente_principal;
+    margin: $separacion / 2 0;
+    font-weight: 300;
+    text-align: center;
+    
+}
+
+/*Tamanos de los encabezados*/
+h1 {
+    font-size: 3.8rem;
+}
+h2 {
+    font-size: 3.4rem;
+}
+h3 {
+    font-size: 3rem;
+}
+h4 {
+    font-size: 2.6rem;
+}

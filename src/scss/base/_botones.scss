@@ -1,0 +1,33 @@
+//---------------------------------------------------
+// Botones
+//---------------------------------------------------
+
+/*Boton amarillo en linea*/
+.boton-amarillo{
+    @include boton($amarillo, inline-block);
+}
+
+/*Boton amarillo en bloque*/
+.boton-amarillo-block{
+    @include boton($amarillo, block);
+    // Tome todo el ancho 
+    width: 100%;
+    // Margen de 1rem por arriba
+    margin-top: 1rem;
+    margin-bottom:0;
+}
+
+/*Boton verde en linea*/
+.boton-verde{
+    @include boton($verde, inline-block);
+}
+
+/*Boton rojo en bloque*/
+.boton-rojo-block{
+    @include boton($rojo, block);
+    // Tome todo el ancho
+    width: 100%;
+    // Margen de 1rem arriba
+    margin-top: 1rem;
+    margin-bottom:0;
+}
